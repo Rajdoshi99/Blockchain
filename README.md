@@ -17,7 +17,8 @@ Therefore, the hash is very useful when you want to detect changes to intersecti
 * Data
 * Hash
 * Hash of the previous block
-Consider following example, where we have a chain of 3 blocks. The 1st block has no predecessor. Hence, it does not contain the previous block. Block 2 contains a hash of block 1. While block 3 contains Hash of block 2.
+
+>Consider following example, where we have a chain of 3 blocks. The 1st block has no predecessor. Hence, it does not contain the previous block. Block 2 contains a hash of block 1. While block 3 contains Hash of block 2.
  
 Hence, all blocks are containing hashes of previous blocks. This is the technique that makes a blockchain so secure. Let's see how it works -
 > Assume an attacker is able to change the data present in the Block 2. Correspondingly, the Hash of the Block also changes. But, Block 3 still contains the old Hash of the Block 2. This makes Block 3, and all succeeding blocks invalid as they do not have correct hash the previous block.
@@ -26,6 +27,13 @@ Therefore, changing a single block can quickly make all following blocks invalid
  
 The blockchain is designed in a way such that the average time for a block to be generated remains fairly constant. In the bitcoin blockchain, the average time for a block to generate is 10 minutes. Other blockchains may have a different time, e.g. 30 seconds, 5 minutes, etc.
 The controlled block generation time is achieved by adding a difficulty value inside the block. In bitcoin, the hash of the block must be strictly smaller than a given value to be accepted. The given value varies according to the total computation power of the network. The more powerful the network is, the more smaller the given value, and hence the more difficult it is to generate the block.
+- - - -
+### How do you run the code?
+* Simply, on Command prompt or IDLE
+- - - -
+### Installations required
+* [Python Environment](https://www.python.org/downloads/)
+* [Sublime Text Editor](https://www.sublimetext.com/3)
 - - - -
 ### Contributors:
 - [@darshanc99].(https://github.com/darshanc99)
